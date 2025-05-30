@@ -41,43 +41,43 @@ export default function Index() {
 }
 
 const styles = StyleSheet.create({
-  container: {2s
+  container: {
     flex: 1,
     justifyContent: "center",
     alignItems: "center",
     backgroundColor: "pink"
   },
-  containerImg: {2s
+  containerImg: {
     flex: 1,
     paddingTop: 60,
   },
   estiloFoto: {
-    width: 280,2s
+    width: 280,
     height: 280,
     borderRadius: 500,
   },
-  containerConteudo: {3s
-    flex: 12s
+  containerConteudo: {
+    flex:1 
   },
-  containerNome:{2s
+  containerNome:{
     alignItems:"center",
   },
-  nome: {2s
+  nome: {
     fontSize: 40,
     color: "white",
     fontWeight: "bold",
   },
-  linha:{2s
+  linha:{
     color: "white",
     fontSize: 20,
     marginBottom: 20
   },
-  containerDados: {2s
+  containerDados: {
     marginBottom: 8,
     flexDirection: "row",
     alignItems: "center",
   },
-  textoDados: {2s
+  textoDados: {
     marginLeft: 10,
     color: "white",
     fontSize: 24,

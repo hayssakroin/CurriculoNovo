@@ -6,33 +6,42 @@ import { StyleSheet, Text, View } from "react-native";
 
 export default function Profissional() {
   return (
-    <View style={styles.container} >
-      <View style = {styles.containerConteudo}>
-        <View style = {styles.containerNome}>
-          <Text style={styles.nome}>Márcio Nunes Sauro</Text>
-        </View>
-        <Text style = {styles.linha}>
-          _______________________________________
-        </Text>
-        <View style = {styles.containerDados}>
-          <Ionicons name="star" size={24} color="white" />
-          <Text style = {styles.textoDados}>2 anos</Text>
-        </View>
-        <View style = {styles.containerDados}>
-          <Ionicons name="sunny" size={24} color="white" />
-          <Text style = {styles.textoDados}>marcinhodograu@gmail.com</Text>
-        </View>
-        <View style = {styles.containerDados}>
-          <Ionicons name="moon" size={24} color="white" />
-          <Text style = {styles.textoDados}>(42) 93859-5632</Text>
-        </View>
-        <View style = {styles.containerDados}>
-          <Ionicons name="heart" size={24} color="white" />
-          <Text style = {styles.textoDados}></Text>
-          <View style={styles.containerTextoCentral}>
-  <Text style={styles.textoCentral}>Oi, meu nome é Márcio. Sou bem treinado, falo Português e InglÊs fluentemente desde meus 3 meses. Adoro ar e livre e cantar, mas não gosto de lugares cheios de pessoas.</Text>
-</View>
-        </View>
+    <View style={styles.container}>
+      <View style={styles.containerNome}>
+        <Text style={styles.nome}>Márcio Nunes Sauro</Text>
+      </View>
+      <Text style={styles.linha}>
+        _______________________________________
+      </Text>
+      <View style={styles.containerTitulo}>
+        <Text style={styles.titulo}>🐾 Formação</Text>
+      </View>
+      <View style={styles.containerDados}>
+        <Ionicons name="school" size={24} color="white" />
+        <Text style={styles.textoDados}>Treinado para comandos avançados</Text>
+      </View>
+      <View style={styles.containerDados}>
+        <Ionicons name="paw" size={24} color="white" />
+        <Text style={styles.textoDados}>Sou lider do bando :3</Text>
+      </View>
+      <View style={styles.containerDados}>
+        <Ionicons name="snow" size={24} color="white" />
+        <Text style={styles.textoDados}>Especializado em cantarolados</Text>
+      </View>
+      <View style={styles.containerTitulo}>
+        <Text style={styles.titulo}>🦴 Experiência</Text>
+      </View>
+      <View style={styles.containerDados}>
+        <Ionicons name="heart" size={24} color="white" />
+        <Text style={styles.textoDados}>2 anos de jogar bolinha</Text>
+      </View>
+      <View style={styles.containerDados}>
+        <Ionicons name="sunny" size={24} color="white" />
+        <Text numberOfLines={50}style={styles.textoDados}>Exploração e Curiosidade</Text>
+      </View>
+      <View style={styles.containerDados}>
+        <Ionicons name="heart" size={24} color="white" />
+        <Text style={styles.textoDados}>Fofo e carinhoso desde pequeno</Text>
       </View>
     </View>
   );
@@ -56,28 +65,38 @@ const styles = StyleSheet.create({
   containerConteudo: {
     flex: 1
   },
-  containerNome:{
-    alignItems:"center",
+  containerNome: {
+    alignItems: "center",
   },
   nome: {
     fontSize: 40,
     color: "white",
     fontWeight: "bold",
   },
-  linha:{
+  linha: {
     color: "white",
     fontSize: 20,
     marginBottom: 20
   },
+  containerTitulo: {
+    marginTop: 20,
+    marginBottom: 10,
+    alignItems: "center",
+  },
+  titulo: {
+    fontSize: 32,
+    color: "white",
+    fontWeight: "bold",
+  },
   containerDados: {
-    marginBottom: 8,
+    marginBottom: 10,
     flexDirection: "row",
     alignItems: "center",
   },
   textoDados: {
-    marginLeft: 10,
+    marginLeft: 5,
     color: "white",
-    fontSize: 24,
+    fontSize: 20,
   },
   containerTextoCentral: {
     justifyContent: "center",
@@ -88,6 +107,6 @@ const styles = StyleSheet.create({
     fontSize: 24,
     color: "white",
     fontWeight: "bold",
-    textAlign: "left",
+    textAlign: "center",
   }
 })
