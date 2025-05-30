@@ -37,7 +37,7 @@ export default function Profissional() {
       </View>
       <View style={styles.containerDados}>
         <Ionicons name="sunny" size={24} color="white" />
-        <Text numberOfLines={50}style={styles.textoDados}>Exploração e Curiosidade</Text>
+        <Text numberOfLines={50}style={styles.textoDados}>Exploração a 3 anos</Text>
       </View>
       <View style={styles.containerDados}>
         <Ionicons name="heart" size={24} color="white" />
