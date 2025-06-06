@@ -1,16 +1,35 @@
-import { Text, View, StyleSheet } from "react-native";
+import {  Button, Pressable, Text, View, StyleSheet } from "react-native";
 import { Image } from "expo-image"
 import { Ionicons } from "@expo/vector-icons"
+import * as ImagePicker from 'expo-image-picker';
+import { useState } from 'react';
 
 // npm install expo-image (usar este código no terminal)
 
 const foto = require("../../assets/images/perfil.png")
 
 export default function Index() {
+  const [image, setImage] = useState<string | null>(null);
+  const pickImage = async () => {
+    let result = await ImagePicker.launchImageLibraryAsync({
+      mediaTypes: ['images', 'videos'],
+      allowsEditing: true,
+      aspect: [1, 1],
+      quality: 1,
+    });
+    console.log(result);
+    if (!result.canceled) {
+      setImage(result.assets[0].uri);
+    }
+  };
+
   return (
     <View style={styles.container} >
       <View style = {styles.containerImg}>
-        <Image source = {foto} style={styles.estiloFoto}></Image>
+          <Pressable onPress={pickImage}>
+            <Image source = {image == null ? foto : image} style={styles.estiloFoto}></Image>
+          </Pressable>
+          <Button title="Trocar imagem" onPress={pickImage} color={"#FFB6C1"} />
       </View>
       <View style = {styles.containerConteudo}>
         <View style = {styles.containerNome}>
