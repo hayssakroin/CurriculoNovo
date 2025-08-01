@@ -30,7 +30,7 @@ export default function Index() {
   return (
     <KeyboardAvoidingView
       style={styles.container}
-      behavior={Platform.OS === "ios" ? "padding" : "height"}
+      behavior={Platform.OS === "android" ? "padding" : "height"}
     >
       <View style={styles.containerImg}>
         <Pressable onPress={pickImage}>
@@ -43,7 +43,7 @@ export default function Index() {
         <View style={styles.containerNome}>
           <TextInput
             style={styles.nome}
-            placeholder="Márcio Nunes Sauro"
+            placeholder="Hayssa Kroin"
             placeholderTextColor="white"
             value={nome}
             onChangeText={setNome}
@@ -61,7 +61,7 @@ export default function Index() {
           <Ionicons name="star" size={24} color="white" />
           <TextInput
             style={styles.textoDados}
-            placeholder="2 anos"
+            placeholder="17 anos"
             placeholderTextColor="white"
             value={idade}
             onChangeText={setIdade}
@@ -72,7 +72,7 @@ export default function Index() {
           <Ionicons name="sunny" size={24} color="white" />
           <TextInput
             style={styles.textoDados}
-            placeholder="marcinhodograu@gmail.com"
+            placeholder="hayssa@gmail.com"
             placeholderTextColor="white"
             value={email}
             onChangeText={setEmail}
