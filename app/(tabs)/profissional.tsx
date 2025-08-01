@@ -14,33 +14,32 @@ export default function Profissional() {
         _______________________________________
       </Text>
       <View style={styles.containerTitulo}>
-        <Text style={styles.titulo}> Formação</Text>
+        <Text style={styles.titulo}>Formação</Text>
       </View>
       <View style={styles.containerDados}>
-        <Ionicons name="school" size={24} color="white" />
         <Text style={styles.textoDados}>tecnica</Text>
       </View>
       <View style={styles.containerDados}>
-        <Ionicons name="paw" size={24} color="white" />
+        
         <Text style={styles.textoDados}>dormi</Text>
       </View>
       <View style={styles.containerDados}>
-        <Ionicons name="snow" size={24} color="white" />
+       
         <Text style={styles.textoDados}>comer</Text>
       </View>
       <View style={styles.containerTitulo}>
         <Text style={styles.titulo}> Experiência</Text>
       </View>
       <View style={styles.containerDados}>
-        <Ionicons name="heart" size={24} color="white" />
+        
         <Text style={styles.textoDados}>dormi</Text>
       </View>
       <View style={styles.containerDados}>
-        <Ionicons name="sunny" size={24} color="white" />
+       
         <Text numberOfLines={50}style={styles.textoDados}>dormi</Text>
       </View>
       <View style={styles.containerDados}>
-        <Ionicons name="heart" size={24} color="white" />
+        
         <Text style={styles.textoDados}>chata</Text>
       </View>
     </View>
